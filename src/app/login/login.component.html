@@ -1,0 +1,28 @@
+<form class="w-50">
+  <div class="form-group">
+    <label class="text-small">Username</label>
+    <input
+      id="userId"
+      type="text"
+      #user
+      class="form-control mb-3"
+      placeholder="Enter username"
+    />
+  </div>
+  <div class="form-group">
+    <label class="text-small">Password</label>
+    <input
+      id="passwordId"
+      type="password"
+      #password
+      class="form-control"
+      placeholder="Password"
+    />
+  </div>
+  <button
+    class="btn btn-primary mt-2"
+    (click)="handleFormClick($event, user, password)"
+  >
+    Login
+  </button>
+</form>
